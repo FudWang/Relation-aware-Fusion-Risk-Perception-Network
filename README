@@ -1,1 +1,73 @@
-a Relation-aware Fusion Risk Perception Network (RFRP-Net), which integrates graph neural networks with anomaly-aware attention for fine-grained risk modeling and detection
+# 📘 Relation-aware Fusion Risk Perception Network (RFRP-Net)
+
+**Dynamic Risk Analysis and Anomaly Detection in Supply Chain Networks**
+
+[![Status](https://img.shields.io/badge/status-under%20development-yellow)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![Python](https://img.shields.io/badge/python-3.9%2B-brightgreen)]()
+
+---
+
+## 🧩 Overview
+This repository contains the implementation of **RFRP-Net (Relation-aware Fusion Risk Perception Network)** —  
+a deep learning framework for **dynamic supply chain risk prediction and anomaly detection**.
+
+RFRP-Net integrates:
+- A **Relation-Aware Graph Convolutional Network (RA-GCN)** for heterogeneous structural modeling.
+- An **Attention-based Abnormality Detection Feature Fusion (AADFF)** mechanism for anomaly perception.
+
+> 📄 This repository accompanies the paper:  
+> *“Relation-aware Fusion Risk Perception Network for Dynamic Risk Analysis and Anomaly Detection in Supply Chain Networks”*
+
+---
+
+## 🚧 Project Status
+🛠️ **Code and dataset are currently being organized.**  
+The repository will soon include:
+- Full implementation of RFRP-Net  
+- Data preprocessing pipeline for the DataCo Global dataset  
+- Training and evaluation scripts  
+- Visualization and analysis tools  
+
+Stay tuned — the initial release is expected soon.
+
+---
+
+## 🔍 Model Architecture
+RFRP-Net consists of two major components:
+
+1. **Relation-Aware Graph Convolutional Network (RA-GCN)**  
+   Captures heterogeneous relationships among customers, orders, and products using multi-granularity attention guided by business similarity and risk intensity.
+
+2. **Attention-based Abnormality Detection Feature Fusion (AADFF)**  
+   Enhances weak anomaly detection through sparsity- and deviation-constrained query vectors, Bi-LSTM encoding, and attention entropy metrics.
+
+---
+
+## 🗂️ Dataset
+Experiments are based on the **DataCo Global Supply Chain Dataset**, which includes operational data from supply, production, sales, and distribution stages.  
+Due to licensing and size constraints, the dataset is **not included** here.  
+You can download it from Figshare:  
+🔗 [https://doi.org/10.6084/m9.figshare.28714328](https://doi.org/10.6084/m9.figshare.28714328)
+
+### Data Preprocessing (to be released)
+The preprocessing script will:
+- Construct a dynamic heterogeneous graph  
+- Apply **Min–Max normalization** to numerical features  
+- Perform **One-hot encoding** on categorical features  
+- Generate **temporal snapshots** for dynamic modeling
+
+---
+
+## ⚙️ Environment Setup
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/RFRP-Net.git
+cd RFRP-Net
+
+# Create a Python environment
+conda create -n rfrpnet python=3.9
+conda activate rfrpnet
+
+# Install dependencies
+pip install -r requirements.txt
