@@ -2,10 +2,6 @@
 
 **Dynamic Risk Analysis and Anomaly Detection in Supply Chain Networks**
 
-[![Status](https://img.shields.io/badge/status-under%20development-yellow)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
-[![Python](https://img.shields.io/badge/python-3.9%2B-brightgreen)]()
-
 ---
 
 ## 🧩 Overview
@@ -58,16 +54,3 @@ The preprocessing script will:
 - Generate **temporal snapshots** for dynamic modeling
 
 ---
-
-## ⚙️ Environment Setup
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/RFRP-Net.git
-cd RFRP-Net
-
-# Create a Python environment
-conda create -n rfrpnet python=3.9
-conda activate rfrpnet
-
-# Install dependencies
-pip install -r requirements.txt
